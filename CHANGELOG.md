@@ -1,5 +1,11 @@
 # @ulisses-cruz/nestjs-brokker
 
+## 0.1.0
+
+### Minor Changes
+
+- c37875f: Emit typescript types
+
 ## 0.0.4
 
 ### Patch Changes
