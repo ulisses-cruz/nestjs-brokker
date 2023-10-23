@@ -6,8 +6,8 @@ import { BROKKER_OPTIONS } from '../contants'
 import { BrokkerModuleOptions } from '../types'
 
 @Injectable()
-export class BrokkerService {
-  private loggerCtx = BrokkerService.name
+export class BrokkerClient {
+  private loggerCtx = BrokkerClient.name
 
   constructor(@Inject(BROKKER_OPTIONS) private opts: BrokkerModuleOptions) {}
 
