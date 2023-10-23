@@ -1,5 +1,11 @@
 # @ulisses-cruz/nestjs-brokker
 
+## 0.0.4
+
+### Patch Changes
+
+- e691561: Try to publish
+
 ## 0.0.3
 
 ### Patch Changes
