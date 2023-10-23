@@ -1,5 +1,5 @@
 {
-  "name": "@ulnitek/nestjs-brokker",
+  "name": "@ulisses-cruz/nestjs-brokker",
   "version": "0.0.1",
   "description": "Brokker module for Nestjs apps",
   "main": "./dist/index.js",
