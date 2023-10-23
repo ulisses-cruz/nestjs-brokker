@@ -1,0 +1,31 @@
+{
+  "name": "@ulnitek/nestjs-brokker",
+  "version": "0.0.1",
+  "description": "Brokker module for Nestjs apps",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [
+    "rabbitmq",
+    "brokker",
+    "nestjs"
+  ],
+  "author": "Ulisses Cruz",
+  "license": "MIT",
+  "devDependencies": {
+    "@changesets/cli": "^2.26.2",
+    "@cloudamqp/amqp-client": "^3.1.1",
+    "@nestjs/common": "^10.2.7",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2"
+  },
+  "peerDependencies": {
+    "@cloudamqp/amqp-client": "^3.1.1",
+    "@nestjs/common": "^10.2.7"
+  }
+}
