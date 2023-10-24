@@ -1,5 +1,11 @@
 # @ulisses-cruz/nestjs-brokker
 
+## 1.0.0
+
+### Major Changes
+
+- e27552f: version 1.0.0
+
 ## 0.2.0
 
 ### Minor Changes
