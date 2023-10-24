@@ -1,5 +1,11 @@
 # @ulisses-cruz/nestjs-brokker
 
+## 1.0.1
+
+### Patch Changes
+
+- 260d899: fix error
+
 ## 1.0.0
 
 ### Major Changes
