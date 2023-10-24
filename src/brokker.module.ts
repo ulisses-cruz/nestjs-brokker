@@ -4,7 +4,6 @@ import { BROKKER_HANDLER, BROKKER_OPTIONS } from './contants'
 import { BrokkerMessage, BrokkerModuleOptions } from './types'
 import { BrokkerClient } from './providers/brokker.client'
 import { BrokkerConnectionProvider } from './providers/connection.provider'
-import { EventEmitterModule } from '@nestjs/event-emitter'
 
 @Module({})
 export class BrokkerModule {
@@ -22,7 +21,6 @@ export class BrokkerModule {
     ]
 
     return {
-      imports: [EventEmitterModule.forRoot()],
       module: BrokkerModule,
       providers,
       exports: providers,
