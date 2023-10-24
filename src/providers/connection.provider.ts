@@ -3,12 +3,19 @@ import { AMQPClient } from '@cloudamqp/amqp-client'
 
 import { getUrl } from '../utils'
 import { BrokkerMessage, BrokkerModuleOptions } from '../types'
-import { BROKKER_CONNECTION, BROKKER_OPTIONS } from '../contants'
+import {
+  BROKKER_CONNECTION,
+  BROKKER_HANDLER,
+  BROKKER_OPTIONS,
+} from '../contants'
 
 const loggerCtx = 'BrokkerConnectionProvider'
 export const BrokkerConnectionProvider: Provider = {
   provide: BROKKER_CONNECTION,
-  useFactory: async (opts: BrokkerModuleOptions) => {
+  useFactory: async (
+    opts: BrokkerModuleOptions,
+    handler: (msg: BrokkerMessage) => void,
+  ) => {
     try {
       const url = getUrl(opts)
       const client = new AMQPClient(url)
@@ -27,7 +34,7 @@ export const BrokkerConnectionProvider: Provider = {
           key: data.routingKey,
           body: data.bodyToString(),
         }
-        return opts.handleMessage(msg)
+        return handler(msg)
       })
 
       Logger.warn('connected to the brokker server', loggerCtx)
@@ -39,5 +46,5 @@ export const BrokkerConnectionProvider: Provider = {
       )
     }
   },
-  inject: [BROKKER_OPTIONS],
+  inject: [BROKKER_OPTIONS, BROKKER_HANDLER],
 }

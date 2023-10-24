@@ -10,7 +10,6 @@ export interface BrokkerModuleOptions {
   exchange: string
   queue: string
   bindingKeys: Array<string>
-  handleMessage: (msg: BrokkerMessage) => void
 }
 
 export interface BrokkerMessage {
