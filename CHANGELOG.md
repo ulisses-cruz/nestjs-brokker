@@ -1,5 +1,11 @@
 # @ulisses-cruz/nestjs-brokker
 
+## 0.2.0
+
+### Minor Changes
+
+- 7fa33ed: downgrade @nesjts/common peer dependency
+
 ## 0.1.0
 
 ### Minor Changes
