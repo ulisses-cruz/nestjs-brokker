@@ -1,5 +1,11 @@
 # @ulisses-cruz/nestjs-brokker
 
+## 1.0.2
+
+### Patch Changes
+
+- a959fc4: new patch
+
 ## 1.0.1
 
 ### Patch Changes
